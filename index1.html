@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html lang="tr"> <!-- Dili Türkçe olarak güncellendi -->
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Kişisel Portföy</title>
+     
+      <!--=====FAB ICON=======-->
+      <link rel="shortcut icon" href="assets/img/logo/logo.png" type="image/x-icon">
+
+    <!--===== CSS LINK =======-->
+    <link rel="stylesheet" href="assets/css/plugins/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/plugins/aos.css">
+    <link rel="stylesheet" href="assets/css/plugins/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/plugins/magnific-popup.css">
+    <link rel="stylesheet" href="assets/css/plugins/mobile.css">
+    <link rel="stylesheet" href="assets/css/plugins/owlcarousel.min.css">
+    <link rel="stylesheet" href="assets/css/plugins/sidebar.css">
+    <link rel="stylesheet" href="assets/css/plugins/slick-slider.css">
+    <link rel="stylesheet" href="assets/css/plugins/nice-select.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+
+    <!--=====  JS SCRIPT LINK =======-->
+    <script src="assets/js/plugins/jquery-3-6-0.min.js"></script>
+    <script src="assets/js/plugins/waypoints.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.5.2/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.5.2/firebase-firestore.js"></script>
+
+</head>
+<body class="homepage1-body">
+    <!--===== PRELOADER STARTS =======-->
+    <div class="overlay flex cac vac preloader-parent">
+      <div>
+          <div class="loader preloader flex vac">
+              <svg width="200" height="200" >
+                  <circle class="background" cx="90" cy="90" r="80" transform="rotate(-90, 100, 90)"/>
+                  <circle class="outer" cx="90" cy="90" r="80" transform="rotate(-90, 100, 90)"/>
+              </svg>
+              <span class="circle-background">
+              </span>
+              <span class="logo animated keyframe5 fade-in">                
+                   <img src="assets/img/logo/logo.png" alt="">
+              </span>
+          </div>
+      </div>
+    </div>
+  <!--===== PRELOADER ENDS =======-->
+
+<!--===== PROGRESS STARTS=======-->
+<div class="paginacontainer">
+    <div class="progress-wrap">
+      <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+        <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"/>
+      </svg>
+    </div>
+  </div>
+<!--===== PROGRESS ENDS=======-->
+
+<div class="cursor"></div>
+ <!--===== MOBILE HEADER STARTS =======-->
+ <div class="mobile-header mobile-haeder1 d-block d-lg-none">
+  <div class="container-fluid">
+    <div class="col-12">
+      <div class="mobile-header-elements">
+        <div class="mobile-logo">
+          <a href="index.html"><img src="assets/img/logo/logo.png" alt=""></a>
+        </div>
+        <div class="mobile-nav-icon dots-menu">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="mobile-sidebar mobile-sidebar1">
+  <div class="logosicon-area">
+    <div class="logos">
+      <img src="assets/img/logo/logo.png" alt="">
+    </div>
+    <div class="menu-close">
+      <i class="fa-solid fa-xmark"></i>
+    </div>
+   </div>
+  <div class="mobile-nav mobile-nav1">
+    <ul class="mobile-nav-list nav-list1">
+      <li><a href="#home">Ana Sayfa</a></li>
+
+      <li><a href="#service">Hizmet</a></li>
+      <li><a href="#skills">Beceriler</a></li>
+      <li><a href="#portfolio">Portföy</a></li>
+
+      <li><a href="#contact">İletişim</a></li>
+
+    </ul>
+   
+      <div class="single-footer">
+        <h3>İletişim Bilgileri</h3>
+        <div class="footer4-contact-info">
+          <div class="contact-info-single">
+            <div class="contact-info-icon">
+              <i class="fa-solid fa-phone-volume"></i>
+            </div>
+            <div class="contact-info-text">
+              <a href="">5454666854</a>
+            </div>
+          </div>
+          <div class="contact-info-single">
+            <div class="contact-info-icon">
+              <i class="fa-solid fa-envelope"></i>
+            </div>
+            <div class="contact-info-text">
+              <a href="mailto:emreeesefa@gmail.com">emreeesefa@gmail.com</a>
+            </div>
+          </div>
+
+          </div>
+          <div class="space20"></div>
+          <div class="single-footer">
+            <h3>Sosyal Bağlantılar</h3>
+            <div class="social-links-mobile-menu">
+              <ul>
+                <li><a href="https://www.facebook.com/profile.php?id=100003267459403"><i class="fa-brands fa-facebook-f"></i></a></li>
+                <li><a href="https://www.instagram.com/emre.sefa17/"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/emre-sefa-i%C5%9F%C4%B1k-106649314/"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+     </div>
+  </div>
+</div>
+<!--===== MOBILE HEADER STARTS =======-->
+
+<!--===== HEADER STARTS =======-->
+<div class="header-section-area" style="background-image: url(assets/img/bg/pagebg1.png); background-position: center; background-size: cover; background-repeat: no-repeat; background-attachment: fixed;">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-2">
+        <div class="sidebar-main">
+          <div class="sidebar-area">
+            <div class="logo">
+              <a href="#"><img src="assets/img/logo/logo.png" alt=""></a>
+            </div>
+            <div id="list-example" class="list-group">
+              <a class="list-group-item list-group-item-action" href="#home" data-aos="fade-up" data-aos-duration="700">
+                <img src="assets/img/icons/home.svg" alt="">
+                Ana Sayfa
+              </a>
+              <a class="list-group-item list-group-item-action" href="#service" data-aos="fade-up" data-aos-duration="900">
+                <img src="assets/img/icons/service.svg" alt="">
+                Hizmet
+              </a>
+              <a class="list-group-item list-group-item-action" href="#skills" data-aos="fade-up" data-aos-duration="1000">
+                <img src="assets/img/icons/skills.svg" alt="">
+                Beceriler
+              </a>
+              <a class="list-group-item list-group-item-action" href="#portfolio" data-aos="fade-up" data-aos-duration="1100">
+                <img src="assets/img/icons/portfolio.svg" alt="">
+                Portföy
+              </a>
+              <a class="list-group-item list-group-item-action" href="#contact" data-aos="fade-up" data-aos-duration="1300">
+                <img src="assets/img/icons/contact.svg" alt="">
+               İletişim
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-10">
+        <div class="all-section-area">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-12">
+                <div data-bs-spy="scroll" data-bs-target="#list-example" data-bs-smooth-scroll="true" class="scrollspy-example" tabindex="0">
+                  <div id="home">
+                    <div class="header-textarea">
+                    <div class="pbmit-heading-subheading">
+                      <h4 class="text-anime-style-3"><img src="assets/img/icons/hand1.svg" alt="">Merhaba Ben Emre Sefa Işık</h4>
+                      <h1 class="text-anime-style-3"><span class="designer">Flutter Developer &</span></h1>
+                      <span class="marketer">Web Developer
+                        <img src="assets/img/elements/elements1.png" alt="" class="elements1" data-aos="fade-left" data-aos-duration="800">
+                        <img src="assets/img/elements/elements1.png" alt="" class="elements2" data-aos="fade-right" data-aos-duration="1000">
+                        <img src="assets/img/elements/elements1.png" alt="" class="elements3" data-aos="fade-left" data-aos-duration="1100">
+                        <img src="assets/img/elements/elements1.png" alt="" class="elements4" data-aos="fade-right" data-aos-duration="1200">
+                      </span>
+                    </div>
+                    <div class="row">
+                      <div class="col-lg-6">
+                        <div class="pbmit-animation-style3">
+                          <div class="progress-one_leftbox">
+                            <img src="assets/img/elements/elements3.png" alt="" class="elements3 d-lg-block d-none">
+                            <img src="assets/img/bg/side-bg1.png" alt="" class="side-bg1">
+                            <img src="assets/img/bg/side-bg2.png" alt="" class="side-bg2">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-6">
+                        <div class="header-pera-area">
+                          <p data-aos="fade-up" data-aos-duration="900">Flutter ve Web teknolojileri konusunda tutkulu bir geliştiriciyim. Mobil ve web uygulamaları geliştirme konusunda deneyimliyim ve kullanıcı dostu, performanslı uygulamalar oluşturmayı hedefliyorum. Dart, Flutter, React, HTML, CSS ve JavaScript gibi teknolojilerle çalışıyorum.Yeni teknolojileri öğrenmeye ve projelerimi sürekli geliştirmeye önem veriyorum..</p>
+                          <div class="btn-area" data-aos="fade-up" data-aos-duration="1200">
+                            <a href="EmreSefaFlutterCV.pdf" download class="download-btn"><img src="assets/img/icons/download.svg" alt="">CV'yi İndir</a>
+                       </div>
+                       <div class="socila-links-area">
+                        <h5>Bağlantılar</h5>
+                        <ul>
+                          <li data-aos="zoom-in" data-aos-duration="700"><a href="https://www.facebook.com/profile.php?id=100003267459403"><i class="fa-brands fa-facebook-f"></i></a></li>
+                          <li data-aos="zoom-in" data-aos-duration="900"><a href="https://www.linkedin.com/in/emre-sefa-i%C5%9F%C4%B1k-106649314/"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                          <li data-aos="zoom-in" data-aos-duration="1000"><a href="https://www.instagram.com/emre.sefa17/"><i class="fa-brands fa-instagram"></i></a></li>
+                          <li data-aos="zoom-in" data-aos-duration="1100"><a href="mailto:emreeesefa@gmail.com">  <i class="fa-solid fa-envelope"></i>
+                            </a>
+                        </li>
+                        
+                        </ul>
+                      </div>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+              </div>
+                  <div id="service">
+                    <div class="service1-section-area">
+                      <div class="container">
+                        <div class="row">
+                          <div class="col-lg-10">
+                            <div class="service-header-area">
+                              <div class="pbmit-heading-subheading">
+                                <h4> <img src="assets/img/icons/star.svg" alt="">HİZMETLERİMİZ</h4>
+                                <h2 class="text-anime-style-3"></h2>
+                                <span class="designer text-anime-style-3">Yazılım</span>
+                                <span class="marketer">HİZMETLERİMİZ
+                                  <img src="assets/img/elements/elements1.png" alt="" class="elements1" data-aos="fade-left" data-aos-duration="800">
+                                  <img src="assets/img/elements/elements1.png" alt="" class="elements2" data-aos="fade-right" data-aos-duration="1000">
+                                  <img src="assets/img/elements/elements1.png" alt="" class="elements3" data-aos="fade-left" data-aos-duration="1100">
+                                  <img src="assets/img/elements/elements1.png" alt="" class="elements4" data-aos="fade-right" data-aos-duration="1200">
+                                </span>
+                              </div>
+                            </div>
+            
+                            <div class="service-boxs-area">
+                              <img src="assets/img/icons/sta.svg" alt="" class="star2 keyframe5">
+                              <div class="service-author-box box1" style="background-image: url(assets/img/bg/polygon-bg2.png); background-position: center; background-repeat: no-repeat; background-size: contain;" data-aos="zoom-out" data-aos-duration="700">
+                                <div class="content">
+                                  <div class="icons">
+                                    <img src="assets/img/icons/service1.svg" alt="">
+                                  </div>
+                                  <p>web geliştirme</p>
+                                </div>
+                              </div>
+            
+                              <div class="service-author-box box2" data-aos="zoom-out" data-aos-duration="800" style="background-image: url(assets/img/bg/polygon-bg3.svg); background-position: center; background-size: cover; background-repeat: no-repeat;">
+                                <img src="assets/img/bg/polygon4.png" alt="" class="polygon2">
+                                <div class="content">
+                                  <div class="icons">
+                                    <img src="assets/img/icons/service2.svg" alt="">
+                                  </div>
+                                  <p>mobil uygulama</p>
+                                </div>
+                              </div>
+            
+                              <div class="service-author-box box3" data-aos="zoom-out" data-aos-duration="900" style="background-image: url(assets/img/bg/polygon-bg3.svg); background-position: center; background-size: cover; background-repeat: no-repeat;">
+                                <img src="assets/img/bg/polygon4.png" alt="" class="polygon2">
+                                <div class="content">
+                                  <div class="icons">
+                                    <img src="assets/img/icons/service3.svg" alt="">
+                                  </div>
+                                  <p>mobil uyumluluk</p>
+                                </div>
+                              </div>
+            
+                              <div class="service-author-box box4" data-aos="zoom-out" data-aos-duration="1000" style="background-image: url(assets/img/bg/polygon-bg3.svg); background-position: center; background-size: cover; background-repeat: no-repeat;">
+                                <img src="assets/img/bg/polygon4.png" alt="" class="polygon2">
+                                <div class="content">
+                                  <div class="icons">
+                                    <img src="assets/img/icons/service4.svg" alt="">
+                                  </div>
+                                  <p>backend sistemler</p>
+                                </div>
+                              </div>
+            
+                              <div class="service-author-box box5" data-aos="zoom-out" data-aos-duration="1100" style="background-image: url(assets/img/bg/polygon-bg3.svg); background-position: center; background-size: cover; background-repeat: no-repeat;">
+                                <img src="assets/img/bg/polygon4.png" alt="" class="polygon2">
+                                <div class="content">
+                                  <div class="icons">
+                                    <img src="assets/img/icons/service5.svg" alt="">
+                                  </div>
+                                  <p>yönetim sistemleri</p>
+                                </div>
+                              </div>
+            
+                              <div class="service-author-box box6" data-aos="zoom-out" data-aos-duration="1200" style="background-image: url(assets/img/bg/polygon-bg3.svg); background-position: center; background-size: cover; background-repeat: no-repeat;">
+                                <img src="assets/img/bg/polygon4.png" alt="" class="polygon2">
+                                <div class="content">
+                                  <div class="icons">
+                                    <img src="assets/img/icons/service6.svg" alt="">
+                                  </div>
+                                  <p>veritabanı</p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div id="skills">
+                    <div class="skills-section-area">
+                      <div class="container">
+                        <div class="row">
+                         <div class="col-lg-10">
+                          <div class="skills-header-area" data-aos="fade-left" data-aos-duration="800">
+                            <div class="pbmit-heading-subheading">
+                              <h4> <img src="assets/img/icons/star.svg" alt="">Becerilerim</h4>
+                              <h2 class="text-anime-style-3">becerilerimi keşfedin <span class="designer">Becerilerim</span></h2>
+                              <span class="marketer">dijital pazarlama
+                                <img src="assets/img/elements/elements1.png" alt="" class="elements1" data-aos="fade-left" data-aos-duration="800">
+                                  <img src="assets/img/elements/elements1.png" alt="" class="elements2" data-aos="fade-right" data-aos-duration="1000">
+                                  <img src="assets/img/elements/elements1.png" alt="" class="elements3" data-aos="fade-left" data-aos-duration="1100">
+                                  <img src="assets/img/elements/elements1.png" alt="" class="elements4" data-aos="fade-right" data-aos-duration="1200">
+                              </span>
+                            </div>
+                          </div>
+            
+                          <div class="all-boxes-area" data-aos="fade-left" data-aos-duration="1200">
+                            <div class="skils-auhtor-area">
+                              <div class="skills-all-boxarea box1">
+                                <img src="assets/img/bg/polygon5.png" alt="" class="polygon2">
+                                <img src="assets/img/bg/polygon-bg4.png" alt="" class="polygon4">
+                                <div class="content">
+                                  <div class="icons">
+                                    <img src="assets/img/icons/skills1.svg" alt="">
+                                  </div>
+                                  <p>Flutter</p>
+                                </div>
+                              </div>
+              
+                              <div class="skills-all-boxarea box2" data-aos="fade-left" data-aos-duration="1000">
+                                <img src="assets/img/bg/polygon-bg4.png" alt="" class="polygon2">
+              
+                                <div class="content">
+                                  <div class="icons">
+                                    <img src="assets/img/icons/skills3.svg" alt="">
+                                  </div>
+                                  <p>Dart</p>
+                                </div>
+                              </div>
+              
+                              <div class="skills-all-boxarea box3" data-aos="fade-right" data-aos-duration="800">
+                                <img src="assets/img/bg/polygon5.png" alt="" class="polygon2">
+                                <img src="assets/img/bg/polygon-bg4.png" alt="" class="polygon4">
+              
+                                <div class="content">
+                                  <div class="icons">
+                                    <img src="assets/img/icons/skills2.svg" alt="">
+                                  </div>
+                                  <p>html</p>
+                                </div>
+                              </div>
+                            </div>
+              
+                            <div class="skils-auhtor-area" data-aos="fade-right" data-aos-duration="1000">
+                              <div class="skills-all-boxarea box4">
+                                <img src="assets/img/bg/polygon5.png" alt="" class="polygon2">
+                                <img src="assets/img/bg/polygon-bg4.png" alt="" class="polygon4">
+              
+                                <div class="content">
+                                  <div class="icons">
+                                    <img src="assets/img/icons/skills4.svg" alt="">
+                                  </div>
+                                  <p>css</p>
+                                </div>
+                              </div>
+              
+                              <div class="skills-all-boxarea box5" data-aos="fade-right" data-aos-duration="1200">
+                                <img src="assets/img/bg/polygon5.png" alt="" class="polygon2">
+                                <img src="assets/img/bg/polygon-bg4.png" alt="" class="polygon4">
+                                <div class="content">
+                                  <div class="icons">
+                                    <img src="assets/img/icons/skills5.svg" alt="">
+                                  </div>
+                                  <p>fırebase</p>
+                                </div>
+                              </div>
+              
+                              <div class="skills-all-boxarea box6">
+                                <img src="assets/img/bg/polygon5.png" alt="" class="polygon2">
+                                <img src="assets/img/bg/polygon-bg4.png" alt="" class="polygon4">
+              
+                                <div class="content">
+                                  <div class="icons">
+                                    <img src="assets/img/icons/skills6.svg" alt="">
+                                  </div>
+                                  <p>php&mysql</p>
+                                </div>
+                              </div>
+                            </div>
+                         </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div id="portfolio">
+                    <div class="portfolio-section-area">
+                      <div class="container">
+                        <div class="row">
+                          <div class="col-lg-10">
+                            <div class="portfolio-header-area">
+                              <div class="pbmit-heading-subheading">
+                                <h4> <img src="assets/img/icons/star.svg" alt="">portföyüm</h4>
+                                <h2 class="text-anime-style-3">En son <span class="designer">Çalışmalarım &</span></h2>
+                                <span class="marketer">Portföy
+                                  <img src="assets/img/elements/elements1.png" alt="" class="elements1" data-aos="fade-left" data-aos-duration="800">
+                                  <img src="assets/img/elements/elements1.png" alt="" class="elements2" data-aos="fade-right" data-aos-duration="1000">
+                                  <img src="assets/img/elements/elements1.png" alt="" class="elements3" data-aos="fade-left" data-aos-duration="1100">
+                                  <img src="assets/img/elements/elements1.png" alt="" class="elements4" data-aos="fade-right" data-aos-duration="1200">
+                                </span>
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="col-lg-6 col-md-6">
+                                <div class="portfolio-box-area click-here" data-content="E-Ticaret Çiçek Bahçesi hakkında detaylı bilgi.">
+                                  <div class="images" data-aos="zoom-in" data-aos-duration="1000">
+                                    <img src="kapaklar/çiçek.png" alt="">
+                                  </div>
+                                  <div class="content-area" data-aos="flip-right" data-aos-duration="1000" style="background-image: url(assets/img/bg/bg2.png); background-position: center; background-size: cover; background-repeat: no-repeat;">
+                                    <h4>#E-Ticaret Çiçek Bahçesi</h4>
+                                    <a href="javascript:void(0);">Modern ve kullanıcı dostu bir e-ticaret web sitesi.</a>
+                                  </div>
+                                </div>
+                              </div>
+            
+                              <div class="col-lg-6 col-md-6">
+                                <div class="portfolio-box-area click-here" data-content="Troy Ambalaj Tanıtım Web Sitesi hakkında detaylı bilgi.">
+                                  <div class="images" data-aos="zoom-in" data-aos-duration="1000">
+                                    <img src="kapaklar/ambalaj.jpg" alt="">
+                                  </div>
+                                  <div class="content-area" data-aos="flip-right" data-aos-duration="1000" style="background-image: url(assets/img/bg/bg3.png); background-position: center; background-size: cover; background-repeat: no-repeat;">
+                                    <h4>#Troy Ambalaj Tanıtım Web Sitesi</h4>
+                                    <a href="javascript:void(0);">Mobil Uyumlu Ambalaj şirketi tanıtım web sitesi.</a>
+                                  </div>
+                                </div>
+                              </div>
+
+
+                              <div class="col-lg-6 col-md-6">
+                                <div class="portfolio-box-area click-here" data-content="Portfolio Web Şablonu hakkında detaylı bilgi.">
+                                  <div class="images" data-aos="zoom-in" data-aos-duration="1000">
+                                    <img src="kapaklar/portfolio.jpg" alt="">
+                                  </div>
+                                  <div class="content-area" data-aos="flip-right" data-aos-duration="1000" style="background-image: url(assets/img/bg/bg2.png); background-position: center; background-size: cover; background-repeat: no-repeat;">
+                                    <h4>#Portfolio Web Şablonu</h4>
+                                    <a href="javascript:void(0);">Modern ve kullanıcı dostu bir Portfolio şablonu.</a>
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div class="col-lg-6 col-md-6">
+                                <div class="portfolio-box-area click-here" data-content="Hafriyat Tanıtım Sitesi hakkında detaylı bilgi.">
+                                  <div class="images" data-aos="zoom-in" data-aos-duration="1000">
+                                    <img src="kapaklar/hafriyat.jpg" alt="">
+                                  </div>
+                                  <div class="content-area" data-aos="flip-right" data-aos-duration="1000" style="background-image: url(assets/img/bg/bg3.png); background-position: center; background-size: cover; background-repeat: no-repeat;">
+                                    <h4>#Hafriyat Tanıtım Sitesi</h4>
+                                    <a href="javascript:void(0);">Mobil Uyumlu Hafriyat şirketi tanıtım web sitesi.</a>
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div class="col-lg-6 col-md-6">
+                                <div class="portfolio-box-area click-here">
+                                  <div class="images" data-aos="zoom-in" data-aos-duration="1000">
+                                    <img src="kapaklar/kitap.jpg" alt="">
+                                  </div>
+                                  <div class="content-area" data-aos="flip-right" data-aos-duration="1000" style="background-image: url(assets/img/bg/bg2.png); background-position: center; background-size: cover; background-repeat: no-repeat;">
+                                    <h4>#E-Dil Kitap</h4>
+                                    <a href="javascript:void(0);">Kitap Okurken Çeviri Özelliği Sunan Mobil Uygulama.</a>
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div class="col-lg-6 col-md-6">
+                                <div class="portfolio-box-area box2 click-here">
+                                  <div class="images" data-aos="zoom-in" data-aos-duration="1000">
+                                    <img src="kapaklar/tahmin.jpg" alt="">
+                                  </div>
+                                  <div class="content-area" data-aos="flip-right" data-aos-duration="1000" style="background-image: url(assets/img/bg/bg3.png);  background-position: center; background-size: cover; background-repeat: no-repeat;">
+                                    <h4>#E-Tahmin</h4>
+                                    <a href="javascript:void(0);">Günlük olaylar hakkında tahmin yapabileceğiniz mobil uygulama.</a>
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div class="col-lg-6 col-md-6">
+                                <div class="portfolio-box-area click-here">
+                                  <div class="images" data-aos="zoom-in" data-aos-duration="1000">
+                                    <img src="kapaklar/fm.jpg" alt="">
+                                  </div>
+                                  <div class="content-area" data-aos="flip-right" data-aos-duration="1000" style="background-image: url(assets/img/bg/bg2.png); background-position: center; background-size: cover; background-repeat: no-repeat;">
+                                    <h4>#FM Scout</h4>
+                                    <a href="javascript:void(0);">Football Manager oyuncuları için gelişmiş analiz ve scout uygulaması.</a>
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div class="col-lg-6 col-md-6">
+                                <div class="portfolio-box-area box2 click-here">
+                                  <div class="images" data-aos="zoom-in" data-aos-duration="1000">
+                                    <img src="kapaklar/bilgi.jpg"">
+                                  </div>
+                                  <div class="content-area" data-aos="flip-right" data-aos-duration="1000" style="background-image: url(assets/img/bg/bg3.png);  background-position: center; background-size: cover; background-repeat: no-repeat;">
+                                    <h4>#bilgi adası</h4>
+                                    <a href="javascript:void(0);">Çocuklar için eğitici ve eğlenceli bir öğrenme uygulaması.</a>
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div class="col-lg-6 col-md-6">
+                                <div class="portfolio-box-area click-here">
+                                  <div class="images" data-aos="zoom-in" data-aos-duration="1000">
+                                    <img src="kapaklar/sinema.jpg" alt="">
+                                  </div>
+                                  <div class="content-area" data-aos="flip-right" data-aos-duration="1000" style="background-image: url(assets/img/bg/bg2.png); background-position: center; background-size: cover; background-repeat: no-repeat;">
+                                    <h4>#sinema bileti</h4>
+                                    <a href="javascript:void(0);">Sinema bileti almak için kolay bir mobil uygulama.</a>
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div class="col-lg-6 col-md-6">
+                                <div class="portfolio-box-area box2 click-here">
+                                  <div class="images" data-aos="zoom-in" data-aos-duration="1000">
+                                    <img src="kapaklar/kargo.jpg" alt="">
+                                  </div>
+                                  <div class="content-area" data-aos="flip-right" data-aos-duration="1000" style="background-image: url(assets/img/bg/bg3.png);  background-position: center; background-size: cover; background-repeat: no-repeat;">
+                                    <h4>#kargoland</h4>
+                                    <a href="javascript:void(0);">Kargo taşıma görevleriyle eğlenceli bir mobil oyun.</a>
+                                  </div>
+                                </div>
+                              </div>
+            
+
+
+            
+
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div id="contact">
+                    <div class="contact-section-area">
+                      <div class="container">
+                        <div class="row">
+                          <div class="col-lg-12">
+                            <div class="contact-header-area">
+                              <div class="row">
+                                <div class="col-lg-8 d-lg-none d-block">
+                                  <div class="contact-text-area">
+                                    <div class="pbmit-heading-subheading">
+                                      <h4> <img src="assets/img/icons/star.svg" alt="">benimle iletişime geç</h4>
+                                      <h2 class="text-anime-style-3">iletişime geçin <span class="designer"></span></h2><span class="marketer">
+                                        <img src="assets/img/elements/elements1.png" alt="" class="elements1" data-aos="fade-left" data-aos-duration="800">
+                                        <img src="assets/img/elements/elements1.png" alt="" class="elements2" data-aos="fade-right" data-aos-duration="1000">
+                                        <img src="assets/img/elements/elements1.png" alt="" class="elements3" data-aos="fade-left" data-aos-duration="1100">
+                                        <img src="assets/img/elements/elements1.png" alt="" class="elements4" data-aos="fade-right" data-aos-duration="1200">
+                                      </span>
+                                    </div>
+                                    <p data-aos="fade-up" data-aos-duration="800">Proje yaptırmak,proje danışmanlığı almak için aşağıdaki bağlantılardan bağlantı kurabilirsiniz.</p>
+                                    <div class="contact-info-area">
+                                      <div class="info-boxarea" data-aos="zoom-out" data-aos-duration="1000">
+                                        <div class="icons">
+                                          <img src="assets/img/icons/phone.svg" alt="">
+                                        </div>
+                                        <div class="content">
+                                          <h5>ARA</h5>
+                                          <a href="">545-466-68-54</a>
+                                        </div>
+                                      </div>
+            
+                                      <div class="info-boxarea" data-aos="fade-up" data-aos-duration="1100">
+                                        <div class="icons">
+                                          <img src="assets/img/icons/email.svg" alt="">
+                                        </div>
+                                        <div class="content">
+                                          <h5>E-posta</h5>
+                                          <a href="mailto:emreeesefa@gmail.com">emreeesefa@gmail.com</a>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="btn-area" data-aos="fade-up" data-aos-duration="1200">
+                                      <a href="EmreSefaFlutterCV.pdf" download="" class="download-btn"><img src="assets/img/icons/download.svg" alt="">CV'yi İndir</a>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col-lg-4">
+                                  <div class="contact-from-area" data-aos="flip-right" data-aos-duration="1000">
+                                    <h3 class="text-anime-style-3">Bir Mesaj Bırakın</h3>
+                                    <form action="https://api.web3forms.com/submit" method="POST">
+                                        <input type="hidden" name="access_key" value="0cdd32fff-eda2-4da3-be43-37d47fbb396b">
+                                        <div class="input">
+                                            <input type="text" placeholder="Tam Ad">
+                                          </div>
+                                          <div class="input">
+                                            <input type="email" placeholder="E-posta Adresi" required>
+                                          </div>
+                                          <div class="input">
+                                            <textarea placeholder="Mesaj" required></textarea>
+                                          </div>
+                                          <div class="btn-area text-end" data-aos="fade-up" data-aos-duration="1200">
+                                            <button type="submit" class="download-btn">şimdi gönder</button>
+                                          </div>
+                                    </form>
+                                  </div>
+                                </div>
+                                <div class="col-lg-8 d-lg-block d-none">
+                                  <div class="contact-text-area">
+                                    <div class="pbmit-heading-subheading">
+                                      <h4> <img src="assets/img/icons/star.svg" alt="">benimle iletişime geç</h4>
+                                      <h2 class="text-anime-style-3">iletişime geçin <span class="designer"></span></h2><span class="marketer">
+                                        <img src="assets/img/elements/elements1.png" alt="" class="elements1" data-aos="fade-left" data-aos-duration="800">
+                                        <img src="assets/img/elements/elements1.png" alt="" class="elements2" data-aos="fade-right" data-aos-duration="1000">
+                                        <img src="assets/img/elements/elements1.png" alt="" class="elements3" data-aos="fade-left" data-aos-duration="1100">
+                                        <img src="assets/img/elements/elements1.png" alt="" class="elements4" data-aos="fade-right" data-aos-duration="1200">
+                                      </span>
+                                    </div>
+                                    <p data-aos="fade-up" data-aos-duration="800">Proje yaptırmak,proje danışmanlığı almak için aşağıdaki bağlantılardan bağlantı kurabilirsiniz</p>
+                                    <div class="contact-info-area">
+                                      <div class="info-boxarea" data-aos="zoom-out" data-aos-duration="1000">
+                                        <div class="icons">
+                                          <img src="assets/img/icons/phone.svg" alt="">
+                                        </div>
+                                        <div class="content">
+                                          <h5>ARA</h5>
+                                          <a href="tel:281-789-6642">545-466-68-54</a>
+                                        </div>
+                                      </div>
+            
+                                      <div class="info-boxarea" data-aos="fade-up" data-aos-duration="1100">
+                                        <div class="icons">
+                                          <img src="assets/img/icons/email.svg" alt="">
+                                        </div>
+                                        <div class="content">
+                                          <h5>E-posta</h5>
+                                          <a href="mailto:emreeesefa@gmail.com">emreeesefa@gmail.com</a>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="btn-area" data-aos="fade-up" data-aos-duration="1200">
+                                      <a href="EmreSefaFlutterCV.pdf" download="" class="download-btn"><img src="assets/img/icons/download.svg" alt="">CV'yi İndir</a>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col-lg-12">
+                                  <div class="footer-section-area" data-aos="fade-up" data-aos-duration="1200" style="background-image: url(assets/img/bg/footer-bg.png); background-position: center; background-repeat: no-repeat; background-size: cover;">
+                                    <div class="footer-form-area text-center pbmit-heading-subheading">
+                                      <!-- Bültene Abone Ol Kısmını Kaldırdık -->
+                                    </div>
+                                    <div class="social-links-area">
+                                      <ul>
+                                        <li data-aos="zoom-out" data-aos-duration="800"><a href="https://www.facebook.com/profile.php?id=100003267459403"><img src="assets/img/icons/facebook.svg" alt=""> facebook</a></li>
+                                        <li data-aos="zoom-out" data-aos-duration="900"><a href="https://www.instagram.com/emre.sefa17/"><img src="assets/img/icons/instagram.svg" alt=""> Instagram</a></li>
+                                        
+                                        <li data-aos="zoom-out" data-aos-duration="1100"><a href="https://www.linkedin.com/in/emre-sefa-i%C5%9F%C4%B1k-106649314/"><img src="assets/img/icons/linkedin.svg" alt=""> linkedin</a></li>
+                                       
+                                      </ul>
+                                    </div>
+                                    <div class="copyright-pera">
+                                      <p>© 2025 Kişisel Portföy. Tüm Hakları Saklıdır.</p>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+  </div>
+</div>
+</div>
+<!--===== HEADER ENDS=======-->
+
+<!--===== JS SCRIPT LINK =======-->
+<script src="assets/js/plugins/bootstrap.min.js"></script>
+<script src="assets/js/plugins/fontawesome.js"></script>
+<script src="assets/js/plugins/aos.js"></script>
+<script src="assets/js/plugins/counter.js"></script>
+<script src="assets/js/plugins/gsap.min.js"></script>
+<script src="assets/js/plugins/ScrollTrigger.min.js"></script>
+<script src="assets/js/plugins/Splitetext.js"></script>
+<script src="assets/js/plugins/sidebar.js"></script>
+<script src="assets/js/plugins/magnific-popup.js"></script>
+<script src="assets/js/plugins/mobilemenu.js"></script>
+<script src="assets/js/plugins/owlcarousel.min.js"></script>
+<script src="assets/js/plugins/nice-select.js"></script>
+<script src="assets/js/main.js"></script>
+<script>
+    document.querySelectorAll('.portfolio-box-area').forEach(item => {
+        item.addEventListener('click', event => {
+            const content = item.getAttribute('data-content');
+            // Sidebar içeriğini güncelle
+            document.querySelector('.sidebar-content').innerText = content; // sidebar-content sınıfını uygun şekilde ayarlayın
+        });
+    });
+</script>
+</body>
+
+</html>
